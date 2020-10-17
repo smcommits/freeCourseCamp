@@ -16,7 +16,7 @@ header {
   
   .top-navbar {
 	background-color: $danger;
-	@include textTransform($bold, uppercase, $white, 1em);
+	@include textTransform(500, uppercase, $white, 1em);
 	text-align: center;
 	padding: 1em 0;
 
@@ -40,11 +40,24 @@ header {
 	max-width: 800px;
 	margin: 0 auto;
 	@include dflex(column, center, center);
+	
+	h1 {
+	  @include textTransform(400, uppercase, $danger);
+	  
+	}
 
 	form {
-	  background: $white;
+	  background: rgba(236, 240, 241, .3);
+	  -webkit-backdrop-filter: blur(10px);
+	  backdrop-filter: blur(10px);  
 	  @include dflex(column);
 	  width: 100%;
+	  padding: 2em 1em;
+	  border-radius: 10px;
+
+	  label {
+		@include textTransform(500, uppercase, $secondary);
+	  }
 
 	}
 
@@ -53,3 +66,42 @@ header {
 
 
 }
+
+//header ends here
+
+//features section
+
+.features {
+  @include textTransform($w: $normal, $a:center);
+  padding: 4em 2em;
+
+  .heading {
+	@include textTransform($bolder, uppercase, $danger, 1em, center);
+  }
+
+  article {
+	padding: 1.5em 0;
+
+	& *{
+	  padding: .3em 0;
+	}
+	
+	i{
+	  font-size: 2.5em;
+	}
+
+	h1 {
+	  @include textTransform($t: uppercase, $w: $medium);
+	}
+
+	p {
+	  @include textTransform($w: $light, $fs: .9em)
+	}
+  }
+}
+
+//feature section ends here
+
+//today's pick section
+
+

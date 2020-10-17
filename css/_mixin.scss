@@ -8,19 +8,31 @@
 
 }
 
-@mixin textTransform($weight: $book, $transform: uppercase, $color: $black, $font-size: 1em) {
-  font-weight: $weight;
-  text-transform: $transform;
-  color: $color;
-  font-size: $font-size;
+@mixin textTransform (
+  $w: $book, 
+  $t: null, 
+  $c: $black, 
+  $fs: null, 
+  $a: null) {
+
+  font-weight: $w;
+  text-transform: $t;
+  color: $c;
+  font-size: $fs;
+  text-align: $a;
 
 }
 
-@mixin dflex($fd: row, $jc: normal, $al:normal, $fw: nowrap) {
+@mixin dflex(
+  $fd: row, 
+  $jc: null, 
+  $ai: null, 
+  $fw: null) {
+
   display: flex;
   flex-direction: $fd;
   justify-content: $jc;
-  align-items: $al;
+  align-items: $ai;
   flex-wrap: $fw;
 
 }

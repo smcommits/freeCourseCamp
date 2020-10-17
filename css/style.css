@@ -1,17 +1,7 @@
 @font-face {
   font-family: gotham;
-  src: url(../fonts/Gotham/Gotham/Gotham-Thin.otf);
-  font-weight: 100;
-}
-@font-face {
-  font-family: gotham;
-  src: url(../fonts/Gotham/Gotham/Gotham-XLight.otf);
-  font-weight: xlight;
-}
-@font-face {
-  font-family: gotham;
   src: url(../fonts/Gotham/Gotham/Gotham-Light.otf);
-  font-weight: 300;
+  font-weight: 100;
 }
 @font-face {
   font-family: gotham;
@@ -144,7 +134,7 @@ header {
 }
 header .top-navbar {
   background-color: #d35649;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   color: #ecf0f1;
   font-size: 1em;
@@ -155,8 +145,6 @@ header .top-navbar ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: normal;
-  flex-wrap: nowrap;
   padding: 0 4em;
   margin-top: 2em;
 }
@@ -175,16 +163,59 @@ header .hero-overlay {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-wrap: nowrap;
+}
+header .hero-overlay h1 {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #d35649;
 }
 header .hero-overlay form {
-  background: #ecf0f1;
+  background: rgba(236, 240, 241, 0.3);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   display: flex;
   flex-direction: column;
-  justify-content: normal;
-  align-items: normal;
-  flex-wrap: nowrap;
   width: 100%;
+  padding: 2em 1em;
+  border-radius: 10px;
+}
+header .hero-overlay form label {
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #98a4a5;
+}
+
+.features {
+  font-weight: 400;
+  color: #1e272e;
+  text-align: center;
+  padding: 4em 2em;
+}
+.features .heading {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #d35649;
+  font-size: 1em;
+  text-align: center;
+}
+.features article {
+  padding: 1.5em 0;
+}
+.features article * {
+  padding: 0.3em 0;
+}
+.features article i {
+  font-size: 2.5em;
+}
+.features article h1 {
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #1e272e;
+}
+.features article p {
+  font-weight: 100;
+  color: #1e272e;
+  font-size: 0.9em;
 }
 
 /*# sourceMappingURL=style.css.map */
