@@ -1,0 +1,26 @@
+
+@mixin xyAlign($p: absolute, $t: 50%, $l: 50%, $x: -50%, $y:-50%) {
+  position: $p;
+  top: $t;
+  left: $l;
+  transform: translate($x, $y);
+
+
+}
+
+@mixin textTransform($weight: $book, $transform: uppercase, $color: $black, $font-size: 1em) {
+  font-weight: $weight;
+  text-transform: $transform;
+  color: $color;
+  font-size: $font-size;
+
+}
+
+@mixin dflex($fd: row, $jc: normal, $al:normal, $fw: nowrap) {
+  display: flex;
+  flex-direction: $fd;
+  justify-content: $jc;
+  align-items: $al;
+  flex-wrap: $fw;
+
+}

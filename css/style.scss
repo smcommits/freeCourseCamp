@@ -1,0 +1,55 @@
+@import "variables";
+@import "mixin";
+@import "fonts";
+@import "norm";
+
+html {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+}
+
+header {
+  background: url(../img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  
+  .top-navbar {
+	background-color: $danger;
+	@include textTransform($bold, uppercase, $white, 1em);
+	text-align: center;
+	padding: 1em 0;
+
+	ul {
+	  @include dflex(row, space-between);
+	  padding: 0 4em;
+	  margin-top: 2em;
+	}
+
+	.text {
+	  display: none;
+	}	
+	.nav-links {
+	  display: inline-block;
+	}
+  }
+
+  .hero-overlay {
+	height: 100vh;
+	width: 80%;
+	max-width: 800px;
+	margin: 0 auto;
+	@include dflex(column, center, center);
+
+	form {
+	  background: $white;
+	  @include dflex(column);
+	  width: 100%;
+
+	}
+
+
+  }
+
+
+}
