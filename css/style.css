@@ -126,8 +126,13 @@ html {
   font-size: 16px;
 }
 
+a {
+  text-decoration: none;
+  color: #ecf0f1;
+}
+
 header {
-  background: url(../img/hero.jpg);
+  background: url(../css/herobulb.png);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -178,11 +183,27 @@ header .hero-overlay form {
   width: 100%;
   padding: 2em 1em;
   border-radius: 10px;
+  position: relative;
+  z-index: 1;
+}
+header .hero-overlay form * {
+  margin: 0.5em 0;
+  padding: 0.5em 0;
 }
 header .hero-overlay form label {
-  font-weight: 500;
+  font-weight: 700;
   text-transform: uppercase;
-  color: #98a4a5;
+  color: #57606f;
+  margin-bottom: 0;
+}
+header .hero-overlay form button {
+  background-color: #d35649;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ecf0f1;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 5px;
 }
 
 .features {
@@ -216,6 +237,81 @@ header .hero-overlay form label {
   font-weight: 100;
   color: #1e272e;
   font-size: 0.9em;
+}
+
+.todays-pick .todays-pick-article1 {
+  background-color: #e17f65;
+}
+.todays-pick .todays-pick-article1 button {
+  color: #e17f65;
+  background-color: #ecf0f1;
+}
+.todays-pick .todays-pick-article2 {
+  background-color: #98a4a5;
+}
+.todays-pick .todays-pick-article2 button {
+  color: #98a4a5;
+  background-color: #ecf0f1;
+}
+.todays-pick .todays-pick-article3 {
+  background-color: #509bd7;
+}
+.todays-pick .todays-pick-article3 button {
+  color: #509bd7;
+  background-color: #ecf0f1;
+}
+.todays-pick article {
+  color: white;
+  padding: 2em 1em;
+}
+.todays-pick article * {
+  margin: 1em 0;
+}
+.todays-pick article figure {
+  width: 40%;
+  margin: 0 auto;
+}
+.todays-pick article img {
+  width: 100%;
+  border-radius: 50%;
+}
+.todays-pick article h3 {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ecf0f1;
+}
+.todays-pick article button {
+  font-weight: 600;
+  color: #1e272e;
+  border-radius: 3px;
+  padding: 0.8em 0.5em;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #000000;
+  color: #ecf0f1;
+  padding: 1em 2em;
+}
+footer * {
+  padding-block: 1em;
+}
+footer .footer-nav ul {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ecf0f1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: justify;
+}
+footer .footer-nav ul li {
+  font-size: 0.9em;
+}
+footer .container-footer {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
