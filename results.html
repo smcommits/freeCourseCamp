@@ -1,31 +1,48 @@
 <DOCTYPE html>
 <html lang="en">
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="UTF-8">
 <title></title>
-<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/flickity.css">
+
 </head>
 <body>
 
 <header>
 
   <nav class="top-navbar">
-	<span class="logo"><span class="free">free</span>CourseCamp</span>
+	<span>FreeCoureCamp</span>
 	<ul class="nav-links-container">
-	  <li class="nav-links"><span class="iconify" data-icon="bi:search" data-inline="false"></span>Courses</li>
-	  <li class="nav-links"><span class="iconify" data-icon="gg:profile" data-inline="false"></span>About</li>
-	  <li class="nav-links"><span class="iconify" data-icon="dashicons:welcome-write-blog" data-inline="false"></span>Blog</li>
-	  <li class="nav-links"><span class="iconify" data-icon="foundation:indent-more" data-inline="false"></span>More</li>
+	  <li class="nav-links">
+		<i class="fas fa-graduation-cap"></i>
+	    <span class="text">Courses</span>
+	  </li>
+	  <li class="nav-links">
+		<i class="fas fa-star"></i>
+		<span class="text">Features</span>
+	  </li>
+		<li class="nav-links">
+		  <i class="fas fa-project-diagram"></i>
+		  <span class="text">Projects</span>
+		</li>
+		<li class="nav-links">
+		  <i class="fas fa-angle-double-right"></i>
+		  <span class="text">More</span>
+		</li>
 	</ul>
+  </nav>
 
 	<section class="filter-section">
-	  <h1 class="hero-overlay-heading">Filter by domain, type, course-level</h1>
+	  <h1 class="hero-overlay-heading">Filter by domain, type, and course-level</h1>
 
 	  <div>
 		<form action="#" method="post">
 		  <div class="dropdown-wrapper">
 			<label class="overlay-label" for="domain">Domain: </label>
-			<select id="" name="domain">
+			<div class="select-wrapper">
+			  <select id="" name="domain">
 			  <option value="Programming" selected> Programming </option>
 			  <option value="Computer-Science"> Computer Science </option>
 			  <option value="Networking"> Networking </option>
@@ -33,9 +50,11 @@
 			  <option value="Data Science"> Data Science</option>
 			</select>
 		  </div>
+		  </div>
 
 		  <div class="dropdown-wrapper">
 			<label class="overlay-label" for="type">Type: </label>
+			<div class="select-wrapper">
 			<select id="type" name="type">
 			  <option value="Reading" selected>Reading</option>
 			  <option value="Books">Books</option>
@@ -43,287 +62,337 @@
 			  <option value="Full-Courses">Full Courses</option>
 			  <option value="Project-based">Project Based</option>
 			</select>
+			</div>
 		  </div>
 
 		  <div class="dropdown-wrapper">
 			<label class="overlay-label" for="course-level">Course-Level: </label>
+			<div class="select-wrapper">
 			<select id="course-level" name="course-level">
 			  <option value="Beginner" selected>Beginner</option>
 			  <option value="Intermediate">Intermiddeate</option>
 			  <option value="Networking">Advance</option>
 			</select>
+			</div>
 		  </div>
 
-		  <button class="overlay-button" type="submit">Search</button>
+		  <button class="overlay-button search" type="submit">Search</button>
+		  <button class="overlay-button filter" type="submit"><span class="iconify aa" data-icon="grommet-icons:power-reset" data-inline="false"></span><span>Clear Filters</span></button>
 		</form>
 	  </div>
 
 	</section>
-  </nav>
 
 </header>
 
 <main>
 
-  <section class="results python">
-	<!-- <h1 class="results-heading">Python</h1> -->
+  <section class="results python js-flickity"
+		   data-flickity-options='{ "cellalign": "left", "contain": true, "wrapAround": true}'>
 
-	<article class="results-content">
-		  <img src="img/html.jpg" alt="python">
+	<article class="results-content gallery-cell">
+		  <img src="img/cardf.png" alt="python">
+		  <figure><img src="img/edx.png" alt="edx"></figure>
 		  <a target="_blank" href="https://www.edx.org/course/introduction-computer-science-mitx-6-00-1x-0#.VJw5pv-kAA">
+			<h1>Python</h1>
 			<h3>edX</h3>
 			<p>Intro to CS using Python</p>
 		  </a>
 	  </article>
 
-	  <article class="results-content">
-		<img src="img/thinkpython.jpg" alt="python">
+	  <article class="results-content gallery-cell">
+		<figure><img src="img/mitocw.png" alt="edx"></figure>
+		<img src="img/cardf.png" alt="python">
 		<a target="_blank" href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-189-a-gentle-introduction-to-programming-using-python-january-iap-2011/">
-		 <h3>MIT OCW</h3>
-		 <p>Gentle Introduction to Programming Using Python</p>
+		  <h1>Python</h1>
+		  <h3>MIT OCW</h3>
+		 <p>Gentle Introduction to Programming</p>
 		</a>
 	  </article>
 
-	  <article class="results-content">
-		<img src="img/mitocw.png" alt="python">
+	  <article class="results-content gallery-cell">
+
+		<figure><img src="img/Coursera.png" alt="edx"></figure>
+		<img src="img/cardf.png" alt="python">
 		<a target="_blank" href="https://www.coursera.org/learn/python">
-		 <h3>Coursera</h3>
+		  <h1>Python</h1>
+		  <h3>Coursera</h3>
 		 <p>Programming for Everybody</p>
 		</a>
 	  </article>
 
-	  <article class="results-content">
-		<img src="img/html.jpg" alt="python">
+	  <article class="results-content gallery-cell">
+		<figure><img src="img/udacity.png" alt="udacity"></figure>
+		<img src="img/cardf.png" alt="python">
 		<a target="_blank" href="https://www.udacity.com/course/introduction-to-python--ud1110">
-		 <h3>Udacity</h3>
+		  <h1>Python</h1>
+		  <h3>Udacity</h3>
 		 <p>Introduction to Python Programming</p>
 		</a>
 	  </article>
 
-	  <article class="results-content">
-		<img src="img/html.jpg" alt="python">
+	  <article class="results-content gallery-cell">
+		<figure><img src="img/teamTree.svg" alt="treehouse"></figure>
+		<img src="img/cardf.png" alt="python">
 		<a target="_blank" href="https://teamtreehouse.com/learn-to-code/python">
-		 <h3>Team Tree House</h3>
+		  <h1>Python</h1>
+		  <h3>Team Tree House</h3>
 		 <p>Learn Python</p>
 		</a>
 	  </article>
 
-	  <article class="results-content">
-		<img src="img/html.jpg" alt="python">
+	  <article class="results-content gallery-cell">
+		<figure><img src="img/learnpython.org.png" alt="learnpython"></figure>
+		<img src="img/cardf.png" alt="python">
 		<a target="_blank" href="https://www.learnpython.org/">
-		 <h3>Learnpython.org</h3>
+		  <h1>Python</h1>
+		  <h3>Learnpython.org</h3>
 		 <p>Learn Python Interactively</p>
 		</a>
 	  </article>
 
-	  <article class="results-content">
-		<img src="img/html.jpg" alt="python">
+	  <article class="results-content gallery-cell">
+		<figure><img src="img/programarcade.ico" alt="programarcade"></figure>
+		<img src="img/cardf.png" alt="python">
 		<a target="_blank" href="http://programarcadegames.com/">
-		 <h3>Dr. Paul Vincent</h3>
+		  <h1>Python</h1>
+		  <h3>Dr. Paul Vincent</h3>
 		 <p>Program Arcade Games</p>
 		</a>
 	  </article>
 
-	  <article class="results-content">
-		<img src="img/html.jpg" alt="python">
+	  <article class="results-content gallery-cell">
+		<figure><img src="img/oreilly.svg" alt="orielly"></figure>
+		<img src="img/cardf.png" alt="python">
 		<a target="_blank" href="https://greenteapress.com/wp/think-python/">
-		 <h3>Green Tea Press</h3>
+		  <h1>Python</h1>
+		  <h3>Green Tea Press</h3>
 		 <p>Think Python</p>
 		</a>
 	  </article>
 
 	</section>
 
-	<section class="results java">
-	  <!-- <h1 class="results-heading">Python</h1> -->
+	<!-- java section -->
 
-	  <article class="results-content">
-		  <img src="img/html.jpg" alt="java">
-		  <a target="_blank" href="https://www.udacity.com/course/java-programming-basics--ud282">
-			<img src="img/udacity.png" alt="udacity">
+	<section class="results java js-flickity"
+		   data-flickity-options='{ "cellalign": "left", "contain": true, "wrapAround": true}'>
+
+	  <article class="results-content gallery-cell">
+		<figure><img src="img/udacity.png" alt="orielly"></figure>
+		<img src="img/cardf.png" alt="java">
+		  <a  target="_blank" href="https://www.udacity.com/course/java-programming-basics--ud282">
+			<h1>Java</h1>
+			<h3>Udacity</h3>
 			<p>Java Programming Basics</p>
 		  </a>
 	  </article>
-
-	  <article class="results-content">
-		<img src="img/thinkpython.jpg" alt="java">
-		<a target="_blank" href="https://www.udacity.com/course/java-programming-basics--ud282">
-		 <img src="img/mitocw.png" alt="mit">
-		 <p>Introduction to programming in Java</p>
-		</a>
-	  </article>
-
-	  <article class="results-content">
-		<img src="img/mitocw.png" alt="java">
+ 
+	  <article class="results-content gallery-cell">
+		<figure><img src="img/stanford.png.png" alt="orielly"></figure>
+		<img src="img/cardf.png" alt="java">
 		<a target="_blank" href="https://see.stanford.edu/Course/CS106A">
-		  <img src="img/stanford.png" alt="stanford">
+		  <h1>Java</h1>
+		  <h3>Stanford</h3>
 		 <p>Programming Methodology</p>
 		</a>
 	  </article>
 
-	  <article class="results-content">
-		<img src="img/html.jpg" alt="java">
+	  <article class="results-content gallery-cell">
+		<figure><img src="img/helsinki.png" alt="orielly"></figure>
+		<img src="img/cardf.png" alt="java">
 		<a target="_blank" href="https://moocfi.github.io/courses/2013/programming-part-1/">
-		 <img src="img/unihelsink.png" alt="helsinki">
+		  <h1>Java</h1>
+		  <h3>University of Helsinki</h3>
 		 <p>Object-Oriented programming with Java</p>
 		</a>
 	  </article>
 
-	  <article class="results-content">
-		<img src="img/html.jpg" alt="java">
+	  <article class="results-content gallery-cell">
+		<figure><img src="img/learnjava.png" alt="orielly"></figure>
+		<img src="img/cardf.png" alt="java">
 		<a target="_blank" href="https://www.learnjavaonline.org/">
-		  <img src="img/learnjava.png" alt="learnjava">
+		  <h1>Java</h1>
+		  <h3>Learn Java</h3>
 		 <p>Learn Java Interactive</p>
 		</a>
 	  </article>
 
-	  <article class="results-content">
-		<img src="img/html.jpg" alt="java">
+	  <article class="results-content gallery-cell">
+
+		<figure><img src="img/oreilly.svg" alt="orielly"></figure>
+		<img src="img/cardf.png" alt="java">
 		<a target="_blank" href="http://greenteapress.com/thinkapjava/">
-		  <img src="https://cdn.oreillystatic.com/images/sitewide-headers/oreilly_logo_mark_red.svg" alt="orielly">
+		  <h1>Java</h1>
+		  <h3>Green Tree Press</h3>
 		 <p>Think Java</p>
 		</a>
 	  </article>
 
-	  <article class="results-content">
-		<img src="img/html.jpg" alt="python">
-		<a target="_blank" href="http://programarcadegames.com/">
-		 <h3>Dr. Paul Vincent</h3>
-		 <p>Program Arcade Games</p>
-		</a>
-	  </article>
-
-	  <article class="results-content">
-		<img src="img/html.jpg" alt="java">
+	  <article class="results-content gallery-cell">
+		<figure><img src="img/oracle.png" alt="orielly"></figure>
+		<img src="img/cardf.png" alt="java">
 		<a target="_blank" href="https://docs.oracle.com/javase/tutorial/">
-		 <img src="img/oracle.png" alt="">
-		 <p>Oracle Java</p>
+		  <h1>Java</h1>
+		  <h3>Oracle</h3>
+		 <p>Oracle Java Tutorial</p>
 		</a>
 	  </article>
 
 	</section>
+	<!-- java section ends -->
 
-	<section class="results c">
-	  <!-- <h1 class="results-heading">Python</h1> -->
+	<!-- c section starts -->
 
-	  <article class="results-content">
-		  <img src="img/html.jpg" alt="c">
+	<section class="results c js-flickity"
+		   data-flickity-options='{ "cellalign": "left", "contain": true, "wrapAround": true}'>
+
+	  <article class="results-content gallery-cell">
+		<figure><img src="img/mitocw.png" alt="orielly"></figure>
+		  <img src="img/cardf.png" alt="c">
 		  <a target="_blank" href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-087-practical-programming-in-c-january-iap-2010/">
-			<img src="img/mitocw.png" alt="mit">
+			<h1>C Language</h1>
+			<h3>MIT OCW</h3>
 			<p>Practical Programming in C</p>
 		  </a>
 	  </article>
 
-	  <article class="results-content">
-		<img src="img/thinkpython.jpg" alt="c">
+	  <article class="results-content gallery-cell">
+		<figure><img src="img/mitocw.png" alt="orielly"></figure>
+		<img src="img/cardf.png" alt="c">
 		<a target="_blank" href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-088-introduction-to-c-memory-management-and-c-object-oriented-programming-january-iap-2010/">
-		 <img src="img/mitocw.png" alt="mit">
+		  <h1>C Language</h1>
+		  <h3>MIT OCW</h3>
 		 <p>Introduction to Memory Management</p>
 		</a>
 	  </article>
 
-	  <article class="results-content">
-		<img src="img/mitocw.png" alt="c">
+	  <article class="results-content gallery-cell">
+		<figure><img src="img/mitocw.png" alt="orielly"></figure>
+		<img src="img/cardf.png" alt="c">
 		<a target="_blank" href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-s096-effective-programming-in-c-and-c-january-iap-2014/">
-		  <img src="img/s" alt="mit">
+		  <h1>C Language</h1>
+		  <h3>MIT OCW</h3>
 		 <p>Effective Programming in C</p>
 		</a>
 	  </article>
 
-	  <article class="results-content">
-		<img src="img/html.jpg" alt="c">
+	  <article class="results-content gallery-cell">
+		<figure><img src="img/mitocw.png" alt="orielly"></figure>
+		<img src="img/cardf.png" alt="c">
 		<a target="_blank" href="https://www.learn-c.org/">
-		 <img src="https://www.learn-c.org/static/img/logos/learn-c.org.png" alt="learn-c">
+		  <h1>C Language</h1>
+		  <h3>LEARNC.ORG</h3>
 		 <p>Interactive C Tutorial</p>
 		</a>
 	  </article>
 
-	  <article class="results-content">
-		<img src="img/html.jpg" alt="java">
+	  <article class="results-content gallery-cell">
+		<figure><img src="img/wikiboosk.png" alt="orielly"></figure>
+		<img src="img/cardf.png" alt="java">
 		<a target="_blank" href="https://en.wikibooks.org/wiki/C_Programming">
-		  <img src="https://en.wikibooks.org/static/images/project-logos/enwikibooks.png" alt="cprogramming">
-		 <p>C Programming</p>
+		  <h1>C Language</h1>
+		  <h3>Wiki Books</h3>
+		 <p>C Programming book by Wiki Books</p>
 		</a>
 	  </article>
 
-	  <article class="results-content">
-		<img src="img/html.jpg" alt="java">
+	  <article class="results-content gallery-cell">
+
+		<figure><img src="img/rasberry.webp" alt="orielly"></figure>
+		<img src="img/cardf.png" alt="c">
 		<a target="_blank" href="https://www.raspberrypi.org/magpi-issues/C_GUI_Programming.pdf">
-		  <img src="https://cdn.shopify.com/s/files/1/2280/2293/files/Raspberry-Pi-Press-Logo-2020-RGB_Raspberry-Pi-Press-Mark-Black_100x.png?v=1582632571" alt="raspberrypi">
-		 <p>Intro to C &amp; GUI</p>
+		  <h1>C Language</h1>
+		  <h3>Rasberry Press</h3>
+		 <p>Intro to C &amp; GUI a book</p>
 		</a>
 	  </article>
 	</section>
+	
+	<!-- c section ends here -->
 
-	<section class="results cpp">
-	  <!-- <h1 class="results-heading">Python</h1> -->
+	<!-- c++ section starts her -->
 
-	  <article class="results-content">
-		  <img src="img/html.jpg" alt="cpp">
-		  <a target="_blank" href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/">
-			<img src="img/mitocw.png" alt="mit">
+	<section class="results cpp js-flickity"
+		   data-flickity-options='{ "cellalign": "left", "contain": true, "wrapAround": true}'>
+
+
+	  <article class="results-content gallery-cell"> 
+		<figure><img src="img/mitocw.png" alt="orielly"></figure>
+		  <img src="img/cardf.png" alt="cpp">
+		  <a target="_blank" href="https://ocw.mit.edu/courses/elctrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/">
+			<h1>C++</h1>
+			<h3>MIT OCW</h3>
 			<p>Intro to C++</p>
 		  </a>
 	  </article>
 
-	  <article class="results-content">
-		<img src="img/thinkpython.jpg" alt="cpp">
-		<a target="_blank" href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-s096-effective-programming-in-c-and-c-january-iap-2014/">
-		 <img src="img/mitocw.png" alt="mit">
-		 <p>Effective Programming in C++</p>
-		</a>
-	  </article>
-
-	  <article class="results-content">
-		<img src="img/mitocw.png" alt="cpp">
+	  <article class="results-content gallery-cell">
+		<figure><img src="img/stanford.png.png" alt="cpp"></figure>
+		<img src="img/cardf.png" alt="cpp">
 		<a target="_blank" href="https://see.stanford.edu/Course/CS106A">
-		  <img src="img/stanford.png" alt="stanford">
+		  <h1>C++</h1>
+		  <h3>Stanford</h3>
 		 <p>Programming Methodology</p>
 		</a>
 	  </article>
 
-	  <article class="results-content">
-		<img src="img/html.jpg" alt="cpp">
+	  <article class="results-content gallery-cell">
+		<figure><img src="img/Coursera.svg" alt="cpp"></figure>
+		<img src="img/cardf.png" alt="cpp">
 		<a target="_blank" href="https://www.coursera.org/learn/c-plus-plus-b">
-		 <img src="img/Coursera.svg" alt="coussera">
+		  <h1>C++</h1>
+		  <h3>Coursera</h3>
 		 <p>C++ For C Programmers</p>
 		</a>
 	  </article>
 
-	  <article class="results-content">
-		<img src="img/html.jpg" alt="cpp">
+	  <article class="results-content gallery-cell">
+		<figure><img src="img/oreilly.svg" alt="cpp"></figure>
+		<img src="img/cardf.png" alt="cpp">
 		<a target="_blank" href="http://greenteapress.com/thinkcpp/index.html">
-		  <img src="img/oreilly.svg" alt="orielly">
+		  <h1>C++</h1>
+		  <h3>Green Tree Press</h3>
 		 <p>Think C++</p>
 		</a>
 	  </article>
 	  
 	</section>
 
-	<section class="results csharp">
-	  <!-- <h1 class="results-heading">Python</h1> -->
+	<!-- c++ section ends here -->
 
-	  <article class="results-content">
-		  <img src="img/html.jpg" alt="csharp">
+	<!-- c# section starts here -->
+
+	<section class="results csharp js-flickity"
+		   data-flickity-options='{ "cellalign": "left", "contain": true, "wrapAround": true}'>
+
+	  <article class="results-content gallery-cell">
+		<figure><img src="img/microsoft.png" alt="csharp"></figure>
+		  <img src="img/cardf.png" alt="csharp">
 		  <a target="_blank" href="https://channel9.msdn.com/Series/CSharp-Fundamentals-for-Absolute-Beginners">
-			<img src="img/microsoft.png" alt="microsoft">
+			<h1>C Sharp</h1>
+			<h3>Microsoft</h3>
 			<p>C# for absolute beginners</p>
 		  </a>
 	  </article>
 
-	  <article class="results-content">
-		<img src="img/thinkpython.jpg" alt="csharp">
+	  <article class="results-content gallery-cell">
+		<figure><img src="img/microsoft.png" alt="csharp"></figure>
+		<img src="img/cardf.png" alt="csharp">
 		<a target="_blank" href="https://docs.microsoft.com/en-us/learn/">
-		 <img src="img/microsoft.png" alt="microsoft">
+		  <h1>C Sharp</h1>
+		  <h3>Microsoft</h3>
 		 <p>C# Jump Start</p>
 		</a>
 	  </article>
 
-	  <article class="results-content">
-		<img src="img/mitocw.png" alt="cpp">
-		<a target="_blank" href="https://see.stanford.edu/Course/CS106A">
-		  <img src="img/stanford.png" alt="stanford">
-		 <p>C# Jump Start</p>
+	  <article class="results-content gallery-cell">
+		<figure><img src="img/stanford.png.png" alt="cpp"></figure>
+		<img src="img/cardf.png" alt="stanford">
+		<a target="_blank" href="https://see.stanford.edu/Course/CS106A"> 
+		  <h1>C Sharp</h1>
+		  <h3>Stanford University</h3>
+		 <p>Programming Methodology</p>
 		</a>
 	  </article>
 
@@ -372,7 +441,9 @@
 	</div>
   </footer>
 
-
+<script src="https://kit.fontawesome.com/95e80ef8bd.js" crossorigin="anonymous"></script>
+<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+<script src="script/flickity.js"></script>
   
 </body>
 </html>

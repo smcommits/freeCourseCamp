@@ -123,7 +123,6 @@ input, select {
 
 html {
   font-family: gotham, Helvetica, Georgia, sans-serif;
-  font-size: 16px;
 }
 
 a {
@@ -131,20 +130,21 @@ a {
   color: #ecf0f1;
 }
 
-header {
+.herobg {
   background: url(../css/herobulb.png);
   background-size: cover;
   background-position: center;
   height: 100vh;
 }
+
 header .top-navbar {
   background-color: #d35649;
   font-weight: 500;
   text-transform: uppercase;
   color: #ecf0f1;
-  font-size: 1em;
   text-align: center;
   padding: 1em 0;
+  box-shadow: 0 10px 2px 1px rgba(0, 0, 0, 0.2);
 }
 header .top-navbar ul {
   display: flex;
@@ -201,7 +201,6 @@ header .hero-overlay form button {
   font-weight: 700;
   text-transform: uppercase;
   color: #ecf0f1;
-  font-size: 1.1em;
   border: none;
   border-radius: 5px;
 }
@@ -216,7 +215,6 @@ header .hero-overlay form button {
   font-weight: 700;
   text-transform: uppercase;
   color: #d35649;
-  font-size: 1em;
   text-align: center;
 }
 .features article {
@@ -236,7 +234,6 @@ header .hero-overlay form button {
 .features article p {
   font-weight: 100;
   color: #1e272e;
-  font-size: 0.9em;
 }
 
 .todays-pick .todays-pick-article1 {
@@ -312,6 +309,137 @@ footer .footer-nav ul li {
 }
 footer .container-footer {
   display: none;
+}
+
+.filter-section {
+  padding: 2em 2em;
+  background-color: #ecf0f1;
+}
+.filter-section h1 {
+  font-weight: 600;
+  color: #57606f;
+  font-size: 1em;
+  text-align: center;
+}
+.filter-section form {
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #57606f;
+  margin-top: 1em;
+  text-align: center;
+}
+.filter-section form .filter, .filter-section form .search {
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  color: #ecf0f1;
+  font-weight: bold;
+  margin-top: 0.8em;
+}
+.filter-section form .search {
+  background-color: #3867d6;
+}
+.filter-section form .filter {
+  background-color: #f7b731;
+}
+.filter-section form .dropdown-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.filter-section form .dropdown-wrapper label {
+  font-size: 0.8em;
+  margin-right: 1em;
+}
+.filter-section form .dropdown-wrapper .select-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-block: 0.8em;
+}
+.filter-section form .dropdown-wrapper .select-wrapper::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 8px solid #ccc;
+  position: absolute;
+  right: 10px;
+  top: 45%;
+}
+.filter-section form .dropdown-wrapper .select-wrapper select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  border: 1px solid #d1d8e0;
+  border-radius: 5px;
+  position: relative;
+  padding: 0.5em 0.5em;
+  padding-right: 1.8em;
+  z-index: 1;
+  background-color: transparent;
+  color: #57606f;
+}
+.filter-section form .dropdown-wrapper .select-wrapper select option {
+  background-color: #fff;
+  border: none;
+}
+
+.results {
+  margin-block: 2em;
+  padding-inline: 2em;
+}
+.results .gallery-cell {
+  width: 100%;
+  max-height: 400px;
+}
+.results .results-content {
+  position: relative;
+  margin-inline: 0.5em;
+}
+.results .results-content img {
+  width: 100%;
+}
+.results .results-content figure {
+  max-width: 30%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.85;
+  padding: 1em 1em;
+  background-color: #ecf0f1;
+  border-bottom-left-radius: 20px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.results .results-content figure img {
+  width: 100%;
+}
+.results .results-content a {
+  position: absolute;
+  max-width: 50%;
+  /* left: 50%; */
+  /* transform: translate(-50%); */
+  left: 0;
+  bottom: 0;
+  background-color: #ecf0f1;
+  color: #d35649;
+  padding: 1.5em;
+  border-top-right-radius: 5px;
+  opacity: 0.85;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.results .results-content a * {
+  margin-block: 0.3em;
+}
+.results .results-content a h1 {
+  text-transform: uppercase;
+  color: #ecf0f1;
+  background-color: #57606f;
+  padding-block: 0.2em;
+  padding-right: 0.5em;
+  text-align: right;
 }
 
 /*# sourceMappingURL=style.css.map */
