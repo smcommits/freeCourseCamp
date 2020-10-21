@@ -1,77 +1,55 @@
 header {
+  .top-navbar {
+    .nav-links-container {
+      .nav-a {
+        position: relative;
+        z-index: 2;
+        display: flex;
+      }
 
-    .top-navbar {
-	.nav-links-container {
-
-	  .nav-a {
-		position: relative;
-		z-index: 2;
-	  }
-	  .nav-a::before{
-		content: "";
-		position: absolute;
-		background-color: transparent;
-		top: -1em;
-		bottom: -1em;
-		left: -.2em;
-		right: -.2em;
-	  } 
-
-	  .nav-a::before:hover{
-		background: #ee7a6e;
-		transition: background 1s;
-	  } 
-	  .nav-links {
-		display: flex;
-	  }
-	  .text{
-		display: block;
-		margin-left: 1em;
-		font-weight: $medium;
-		z-index: 1;
-	  
-	  }
-	}
+      .text {
+        display: block;
+        margin-left: 1em;
+        font-weight: $medium;
+        z-index: 1;
+      }
+    }
   }
 }
 
 .feature-wrapper {
-
   .features {
-	display: flex;
-	flex-wrap: wrap;	
+    display: flex;
+    flex-wrap: wrap;
 
-	article {
-	  flex-basis: 50%;
-	  box-sizing: border-box;
-	  padding-inline: 6em;
+    article {
+      flex-basis: 50%;
+      box-sizing: border-box;
+      padding-inline: 6em;
 
-	  h1 {
-		font-weight: $bolder;
-	  }
+      h1 {
+        font-weight: $bolder;
+      }
 
-	  i {
-		font-size: 3.5em;
-	  }
-	
-	}
-  } 
+      i {
+        font-size: 3.5em;
+      }
+    }
+  }
 }
-.filter-section  {
 
+.filter-section {
   .filter-form {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
 
-	.dropdown-wrapper {
-	  flex-direction: column;
-	  align-items: start;
-	  margin-inline: 1em;
-
-
-	}
+    .dropdown-wrapper {
+      flex-direction: column;
+      align-items: start;
+      margin-inline: 1em;
+    }
   }
 }
 
@@ -79,182 +57,169 @@ header {
 
 .detail-main {
   max-width: 1300px;
+
   .hero {
-	display: flex;
+    display: flex;
 
-	figure {
-	  max-width: 440px;
-	  margin-right: 2em;
-
-	}
+    figure {
+      max-width: 440px;
+      margin-right: 2em;
+    }
   }
 
   .details-nav {
-	justify-content: center;
-	
-	a {
-	  margin: 0 1em;
-	}
+    justify-content: center;
+
+    a {
+      margin: 0 1em;
+    }
   }
 
   .details {
-	display: flex;
-	flex-direction: row-reverse;
+    display: flex;
+    flex-direction: row-reverse;
 
-	div {
-	  margin-right: 4em;
-	}
+    div {
+      margin-right: 4em;
+    }
   }
 
-  
+  .key-points {
+    padding: 2em;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    min-width: 285px;
+    align-self: start;
 
-  .key-points{
-	padding: 2em;
-	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-	min-width: 285px;
-	align-self: start;
-	
-	ul {
-	  list-style: none;
-	  padding: 0;
+    ul {
+      list-style: none;
+      padding: 0;
 
-	  li {
-		padding: 2em 0;
-		border-bottom: 1px solid $white;
+      li {
+        padding: 2em 0;
+        border-bottom: 1px solid $white;
 
-		.bold {
-		  font-weight: $medium;
-		}
-	}
-	}
-	
-	
+        .bold {
+          font-weight: $medium;
+        }
+      }
+    }
   }
 }
-.results-main {   
+
+.results-main {
   .results-wrapper {
-	h1 {
-	  font-size: 1.5em;
-	}
-	
+    .results-header {
+      font-size: 1.5em;
+    }
   }
 }
 
-
-footer {
-
+.footer {
   padding: 0 8em;
   padding-top: 2em;
 
-
   .footer-nav {
-	ul {
-	  display: flex;
-	  border-top: 1px solid $dark;
-	  padding: .5em 1em;
-	  border-bottom: 1px solid $dark;
-	  position: relative;
-	  justify-content: space-between;
+    ul {
+      display: flex;
+      border-top: 1px solid $dark;
+      padding: 0.5em 1em;
+      border-bottom: 1px solid $dark;
+      position: relative;
+      justify-content: space-between;
 
-
-	  .icon {
-		display: block;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		border: 1px solid $dark;
-		border-radius: 50%;
-		font-size: 1.2em;
-		padding: 1.8em;
-		background-color: #000;
-		margin: 0;
-	  }
-
-	}
+      .icon {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid $dark;
+        border-radius: 50%;
+        font-size: 1.2em;
+        padding: 1.8em;
+        background-color: #000;
+        margin: 0;
+      }
+    }
   }
+
   .container-footer {
-	display: grid;
-	padding: 3em 0;
-	grid-template-columns: repeat(3, 1fr);
-	max-width: 1300px;
-	margin: 0 auto;
+    display: grid;
+    padding: 3em 0;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1300px;
+    margin: 0 auto;
 
-	
+    h3 {
+      font-weight: $bold;
+      text-transform: uppercase;
+    }
 
-	h3 {
-	  font-weight: $bold;
-	  text-transform: uppercase;
-	}
+    p {
+      font-weight: $light;
+      font-size: 0.9em;
+    }
 
-	p {
-	  font-weight: $light;
-	  font-size: .9em;
-	}
+    div {
+      text-align: center;
 
+      .subscribe-group {
+        display: flex;
+        justify-content: center;
+      }
 
+      & * {
+        margin: 0.5em 0;
+      }
 
-	
-	div {
-	  text-align: center;
+      input {
+        background: #111;
+        border: none;
+        border: 1px solid #1f1f1f;
+        padding: 0.5em;
+        color: $white;
+      }
 
-	  .subscribe-group {
-		display: flex;
-		justify-content: center;
+      button {
+        background-color: #1f1f1f;
+        border: none;
+        padding: 0.5em 0.8em;
+        font-weight: $bold;
+        color: $white;
+      }
+    }
 
-	  }
-
-	  & * {
-		margin: .5em 0;
-	  }
-	  
-	  input {
-		background: #111;
-		border: none;
-		border: 1px solid #1f1f1f;
-		padding: .5em;
-		color: $white;
-	  }
-
-	  button {
-		background-color: #1f1f1f;
-		border: none;
-		padding: .5em .8em;
-		font-weight: $bold;
-		color: $white;
-	  }
-	}
-
-	.contact {
-	  a {
-		color: $danger;
-	  }
-	}
+    .contact {
+      a {
+        color: $danger;
+      }
+    }
   }
 
   .footer-bottom {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	background: #1f1f1f;
-	padding: 0 2em;
-	margin: 0 -8em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #1f1f1f;
+    padding: 0 2em;
+    margin: 0 -8em;
 
-	.icons {
-	  flex-basis: 25%;
-	}
+    .icons {
+      flex-basis: 25%;
+    }
 
-	.right-text {
-	  margin-left: 2em;
-	  display: inline-block;
-	  p {
-		font-size: .75em;
-		display: inline-block;
-	  }
-	  a {
-		color: $dark;
-	  }
-	}
-	
+    .right-text {
+      margin-left: 2em;
+      display: inline-block;
+
+      p {
+        font-size: 0.75em;
+        display: inline-block;
+      }
+
+      a {
+        color: $dark;
+      }
+    }
   }
 }

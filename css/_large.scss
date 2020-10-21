@@ -1,43 +1,36 @@
 .results {
   .gallery-cell {
-	width: 33.33%;
+    width: 33.33%;
   }
 }
 
-.herobg{
+.herobg {
+  background: rgb(34, 33, 91);
+  background: radial-gradient(circle, rgba(34, 33, 91, 1) 0%, rgba(12, 15, 56, 1) 100%);
 
-  
-  background: rgb(34,33,91);
-  background: radial-gradient(circle, rgba(34,33,91,1) 0%, rgba(12,15,56,1) 100%);
-
-  
   .hero-overlay {
-	margin-left: 8em;
-	max-width: 550px;
-	}
+    margin-left: 8em;
+    max-width: 550px;
+  }
 
-	.main-carousel { 
-	right: 10%;
-	display: block;
-	align-self: center;
+  .main-carousel {
+    right: 10%;
+    display: block;
+    align-self: center;
 
-	/* .first { */
-	  // height: 100%;
-	  // display: flex;
-	  // flex-direction: column;
-	  // justify-content: space-between;
-	/* } */
+    /* .first { */
+    // height: 100%;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
 
-	h3 {
-	  color: $white;
-	  text-align: center;
-	  text-transform: uppercase;
-	  font-size: 2em;
-	}
+    /* } */
+
+    h3 {
+      color: $white;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 2em;
+    }
   }
 }
-
-
-
-
-
