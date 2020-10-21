@@ -2,7 +2,7 @@
 
 > This website is a directory of free and quality courses available online. The courses are in the domains like Programming, Computer Science, and other IT related domains. 
 
-![screenshot](./img/screenshot.png)
+![screenshot](./img/screeshot.png)
 
 
 ## Built With
