@@ -1,9 +1,9 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="UTF-8">
-<title></title>
+<title>FreeCourseCamp</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/flickity.css">
 
@@ -13,36 +13,50 @@
 <header>
 
   <nav class="top-navbar">
-	<span>FreeCoureCamp</span>
-	<ul class="nav-links-container">
-	  <li class="nav-links">
-		<i class="fas fa-graduation-cap"></i>
-	    <span class="text">Courses</span>
-	  </li>
-	  <li class="nav-links">
-		<i class="fas fa-star"></i>
-		<span class="text">Features</span>
-	  </li>
-		<li class="nav-links">
-		  <i class="fas fa-project-diagram"></i>
-		  <span class="text">Projects</span>
-		</li>
-		<li class="nav-links">
-		  <i class="fas fa-angle-double-right"></i>
-		  <span class="text">More</span>
-		</li>
-	</ul>
-  </nav>
 
-	<section class="filter-section">
+	<a href="index.html" class="logo"><figure><img src="img/LOGO2-01.png" alt=""></figure></a>
+	  <ul class="nav-links-container" id="nav-links">
+
+		  <li class="nav-links">
+		<a class="nav-a" href="results.html">
+			<span class="iconify" data-icon="dashicons:welcome-learn-more" data-inline="false"></span>
+			<span class="text">Courses</span>
+		</a>
+		  </li>
+
+		  <li class="nav-links">
+		<a class="nav-a" href="#feature-section">
+			<span class="iconify" data-icon="gg:profile" data-inline="false"></span>
+			<span class="text">Feature</span>
+		</a>
+		  </li>
+
+		  <li class="nav-links">
+		<a class="nav-a" href="#">
+			<span class="iconify" data-icon="gg:profile" data-inline="false"></span>
+			<span class="text">About</span>
+		</a>
+		  </li>
+
+		  <li class="nav-links">
+		<a class="nav-a" href="#">
+			<span class="iconify" data-icon="foundation:indent-more" data-inline="false"></span>
+			<span class="text">More</span>
+		</a>
+		  </li>
+	  </ul>
+	</nav>
+
+
+  	<section class="filter-section">
 	  <h1 class="hero-overlay-heading">Filter by domain, type, and course-level</h1>
 
 	  <div>
-		<form action="#" method="post">
+		<form action="#" method="post" class="filter-form">
 		  <div class="dropdown-wrapper">
 			<label class="overlay-label" for="domain">Domain: </label>
 			<div class="select-wrapper">
-			  <select id="" name="domain">
+			  <select name="domain" id="domain">
 			  <option value="Programming" selected> Programming </option>
 			  <option value="Computer-Science"> Computer Science </option>
 			  <option value="Networking"> Networking </option>
@@ -76,8 +90,9 @@
 			</div>
 		  </div>
 
-		  <button class="overlay-button search" type="submit">Search</button>
-		  <button class="overlay-button filter" type="submit"><span class="iconify aa" data-icon="grommet-icons:power-reset" data-inline="false"></span><span>Clear Filters</span></button>
+		  <div class="button-wrapper">
+			<button class="overlay-button search" type="submit">Search</button>
+		   <button class="overlay-button filter" type="submit"><span class="iconify aa" data-icon="grommet-icons:power-reset" data-inline="false"></span><span>Clear Filters</span></button></div>
 		</form>
 	  </div>
 
@@ -85,233 +100,429 @@
 
 </header>
 
-<main>
-
+<main class="results-main">
+  <section class="results-wrapper">
+  <h1>Python</h1>
   <section class="results python js-flickity"
 		   data-flickity-options='{ "cellalign": "left", "contain": true, "wrapAround": true}'>
 
 	<article class="results-content gallery-cell">
-		  <img src="img/cardf.png" alt="python">
+		  <img src="img/cards.png" alt="python">
 		  <figure><img src="img/edx.png" alt="edx"></figure>
 		  <a target="_blank" href="https://www.edx.org/course/introduction-computer-science-mitx-6-00-1x-0#.VJw5pv-kAA">
 			<h1>Python</h1>
 			<h3>edX</h3>
 			<p>Intro to CS using Python</p>
 		  </a>
+		  <form class="more-links" action="detail.html">
+			<button class="learn-more">
+			  <span class="circle" aria-hidden="true">
+				<span class="icon arrow"></span>
+			  </span>
+			  <span class="button-text">Learn More</span>
+			</button>
+		  </form>
 	  </article>
 
 	  <article class="results-content gallery-cell">
 		<figure><img src="img/mitocw.png" alt="edx"></figure>
-		<img src="img/cardf.png" alt="python">
+		<img src="img/cards.png" alt="python">
 		<a target="_blank" href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-189-a-gentle-introduction-to-programming-using-python-january-iap-2011/">
 		  <h1>Python</h1>
 		  <h3>MIT OCW</h3>
 		 <p>Gentle Introduction to Programming</p>
 		</a>
+		<form class="more-links" action="detail.html">
+			<button class="learn-more">
+			  <span class="circle" aria-hidden="true">
+				<span class="icon arrow"></span>
+			  </span>
+			  <span class="button-text">Learn More</span>
+			</button>
+		  </form>
+
 	  </article>
 
 	  <article class="results-content gallery-cell">
 
-		<figure><img src="img/Coursera.png" alt="edx"></figure>
-		<img src="img/cardf.png" alt="python">
+	  <figure><img src="img/Coursera.png" alt="edx"></figure>
+		<img src="img/cards.png" alt="python">
 		<a target="_blank" href="https://www.coursera.org/learn/python">
 		  <h1>Python</h1>
 		  <h3>Coursera</h3>
 		 <p>Programming for Everybody</p>
 		</a>
+		<form class="more-links" action="detail.html">
+			<button class="learn-more">
+			  <span class="circle" aria-hidden="true">
+				<span class="icon arrow"></span>
+			  </span>
+			  <span class="button-text">Learn More</span>
+			</button>
+		  </form>
+
 	  </article>
 
 	  <article class="results-content gallery-cell">
 		<figure><img src="img/udacity.png" alt="udacity"></figure>
-		<img src="img/cardf.png" alt="python">
+		<img src="img/cards.png" alt="python">
 		<a target="_blank" href="https://www.udacity.com/course/introduction-to-python--ud1110">
 		  <h1>Python</h1>
 		  <h3>Udacity</h3>
 		 <p>Introduction to Python Programming</p>
 		</a>
+		<form class="more-links" action="detail.html">
+			<button class="learn-more">
+			  <span class="circle" aria-hidden="true">
+				<span class="icon arrow"></span>
+			  </span>
+			  <span class="button-text">Learn More</span>
+			</button>
+		  </form>
+
 	  </article>
 
 	  <article class="results-content gallery-cell">
 		<figure><img src="img/teamTree.svg" alt="treehouse"></figure>
-		<img src="img/cardf.png" alt="python">
+		<img src="img/cards.png" alt="python">
 		<a target="_blank" href="https://teamtreehouse.com/learn-to-code/python">
 		  <h1>Python</h1>
 		  <h3>Team Tree House</h3>
 		 <p>Learn Python</p>
 		</a>
+		<form class="more-links" action="detail.html">
+			<button class="learn-more">
+			  <span class="circle" aria-hidden="true">
+				<span class="icon arrow"></span>
+			  </span>
+			  <span class="button-text">Learn More</span>
+			</button>
+		  </form>
+
 	  </article>
 
 	  <article class="results-content gallery-cell">
 		<figure><img src="img/learnpython.org.png" alt="learnpython"></figure>
-		<img src="img/cardf.png" alt="python">
+		<img src="img/cards.png" alt="python">
 		<a target="_blank" href="https://www.learnpython.org/">
 		  <h1>Python</h1>
 		  <h3>Learnpython.org</h3>
 		 <p>Learn Python Interactively</p>
 		</a>
+		<form class="more-links" action="detail.html">
+			<button class="learn-more">
+			  <span class="circle" aria-hidden="true">
+				<span class="icon arrow"></span>
+			  </span>
+			  <span class="button-text">Learn More</span>
+			</button>
+		  </form>
+
 	  </article>
 
 	  <article class="results-content gallery-cell">
 		<figure><img src="img/programarcade.ico" alt="programarcade"></figure>
-		<img src="img/cardf.png" alt="python">
+		<img src="img/cards.png" alt="python">
 		<a target="_blank" href="http://programarcadegames.com/">
 		  <h1>Python</h1>
 		  <h3>Dr. Paul Vincent</h3>
 		 <p>Program Arcade Games</p>
 		</a>
+		<form class="more-links" action="detail.html">
+			<button class="learn-more">
+			  <span class="circle" aria-hidden="true">
+				<span class="icon arrow"></span>
+			  </span>
+			  <span class="button-text">Learn More</span>
+			</button>
+		  </form>
+
 	  </article>
 
 	  <article class="results-content gallery-cell">
 		<figure><img src="img/oreilly.svg" alt="orielly"></figure>
-		<img src="img/cardf.png" alt="python">
+		<img src="img/cards.png" alt="python">
 		<a target="_blank" href="https://greenteapress.com/wp/think-python/">
 		  <h1>Python</h1>
 		  <h3>Green Tea Press</h3>
 		 <p>Think Python</p>
 		</a>
+		<form class="more-links" action="detail.html">
+			<button class="learn-more">
+			  <span class="circle" aria-hidden="true">
+				<span class="icon arrow"></span>
+			  </span>
+			  <span class="button-text">Learn More</span>
+			</button>
+		  </form>
+
 	  </article>
 
 	</section>
+  </section>
+  <hr>
+  
 
 	<!-- java section -->
+
+	<section class="results-wrapper">
+	  <h1>Java</h1>
 
 	<section class="results java js-flickity"
 		   data-flickity-options='{ "cellalign": "left", "contain": true, "wrapAround": true}'>
 
 	  <article class="results-content gallery-cell">
 		<figure><img src="img/udacity.png" alt="orielly"></figure>
-		<img src="img/cardf.png" alt="java">
+		<img src="img/cards.png" alt="java">
 		  <a  target="_blank" href="https://www.udacity.com/course/java-programming-basics--ud282">
 			<h1>Java</h1>
 			<h3>Udacity</h3>
 			<p>Java Programming Basics</p>
 		  </a>
+		  <form class="more-links" action="detail.html">
+			<button class="learn-more">
+			  <span class="circle" aria-hidden="true">
+				<span class="icon arrow"></span>
+			  </span>
+			  <span class="button-text">Learn More</span>
+			</button>
+		  </form>
 	  </article>
  
 	  <article class="results-content gallery-cell">
 		<figure><img src="img/stanford.png.png" alt="orielly"></figure>
-		<img src="img/cardf.png" alt="java">
+		<img src="img/cards.png" alt="java">
 		<a target="_blank" href="https://see.stanford.edu/Course/CS106A">
 		  <h1>Java</h1>
 		  <h3>Stanford</h3>
 		 <p>Programming Methodology</p>
 		</a>
+		<form class="more-links" action="detail.html">
+			<button class="learn-more">
+			  <span class="circle" aria-hidden="true">
+				<span class="icon arrow"></span>
+			  </span>
+			  <span class="button-text">Learn More</span>
+			</button>
+		  </form>
+
 	  </article>
 
 	  <article class="results-content gallery-cell">
 		<figure><img src="img/helsinki.png" alt="orielly"></figure>
-		<img src="img/cardf.png" alt="java">
+		<img src="img/cards.png" alt="java">
 		<a target="_blank" href="https://moocfi.github.io/courses/2013/programming-part-1/">
 		  <h1>Java</h1>
 		  <h3>University of Helsinki</h3>
 		 <p>Object-Oriented programming with Java</p>
 		</a>
+		<form class="more-links" action="detail.html">
+			<button class="learn-more">
+			  <span class="circle" aria-hidden="true">
+				<span class="icon arrow"></span>
+			  </span>
+			  <span class="button-text">Learn More</span>
+			</button>
+		  </form>
+
 	  </article>
 
 	  <article class="results-content gallery-cell">
 		<figure><img src="img/learnjava.png" alt="orielly"></figure>
-		<img src="img/cardf.png" alt="java">
+		<img src="img/cards.png" alt="java">
 		<a target="_blank" href="https://www.learnjavaonline.org/">
 		  <h1>Java</h1>
 		  <h3>Learn Java</h3>
 		 <p>Learn Java Interactive</p>
 		</a>
+		<form class="more-links" action="detail.html">
+			<button class="learn-more">
+			  <span class="circle" aria-hidden="true">
+				<span class="icon arrow"></span>
+			  </span>
+			  <span class="button-text">Learn More</span>
+			</button>
+		  </form>
+
 	  </article>
 
 	  <article class="results-content gallery-cell">
 
 		<figure><img src="img/oreilly.svg" alt="orielly"></figure>
-		<img src="img/cardf.png" alt="java">
+		<img src="img/cards.png" alt="java">
 		<a target="_blank" href="http://greenteapress.com/thinkapjava/">
 		  <h1>Java</h1>
 		  <h3>Green Tree Press</h3>
 		 <p>Think Java</p>
 		</a>
+		<form class="more-links" action="detail.html">
+			<button class="learn-more">
+			  <span class="circle" aria-hidden="true">
+				<span class="icon arrow"></span>
+			  </span>
+			  <span class="button-text">Learn More</span>
+			</button>
+		  </form>
+
 	  </article>
 
 	  <article class="results-content gallery-cell">
 		<figure><img src="img/oracle.png" alt="orielly"></figure>
-		<img src="img/cardf.png" alt="java">
+		<img src="img/cards.png" alt="java">
 		<a target="_blank" href="https://docs.oracle.com/javase/tutorial/">
 		  <h1>Java</h1>
 		  <h3>Oracle</h3>
 		 <p>Oracle Java Tutorial</p>
 		</a>
+		<form class="more-links" action="detail.html">
+			<button class="learn-more">
+			  <span class="circle" aria-hidden="true">
+				<span class="icon arrow"></span>
+			  </span>
+			  <span class="button-text">Learn More</span>
+			</button>
+		  </form>
+
 	  </article>
 
 	</section>
+	</section>
+	<hr>
 	<!-- java section ends -->
 
 	<!-- c section starts -->
+
+	<section class="results-wrapper">
+  
+	  <h1>C Language</h1>
 
 	<section class="results c js-flickity"
 		   data-flickity-options='{ "cellalign": "left", "contain": true, "wrapAround": true}'>
 
 	  <article class="results-content gallery-cell">
 		<figure><img src="img/mitocw.png" alt="orielly"></figure>
-		  <img src="img/cardf.png" alt="c">
+		  <img src="img/cards.png" alt="c">
 		  <a target="_blank" href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-087-practical-programming-in-c-january-iap-2010/">
 			<h1>C Language</h1>
 			<h3>MIT OCW</h3>
 			<p>Practical Programming in C</p>
 		  </a>
+		  <form class="more-links" action="detail.html">
+			<button class="learn-more">
+			  <span class="circle" aria-hidden="true">
+				<span class="icon arrow"></span>
+			  </span>
+			  <span class="button-text">Learn More</span>
+			</button>
+		  </form>
+
 	  </article>
 
 	  <article class="results-content gallery-cell">
 		<figure><img src="img/mitocw.png" alt="orielly"></figure>
-		<img src="img/cardf.png" alt="c">
+		<img src="img/cards.png" alt="c">
 		<a target="_blank" href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-088-introduction-to-c-memory-management-and-c-object-oriented-programming-january-iap-2010/">
 		  <h1>C Language</h1>
 		  <h3>MIT OCW</h3>
 		 <p>Introduction to Memory Management</p>
 		</a>
+		<form class="more-links" action="detail.html">
+			<button class="learn-more">
+			  <span class="circle" aria-hidden="true">
+				<span class="icon arrow"></span>
+			  </span>
+			  <span class="button-text">Learn More</span>
+			</button>
+		  </form>
+
 	  </article>
 
 	  <article class="results-content gallery-cell">
 		<figure><img src="img/mitocw.png" alt="orielly"></figure>
-		<img src="img/cardf.png" alt="c">
+		<img src="img/cards.png" alt="c">
 		<a target="_blank" href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-s096-effective-programming-in-c-and-c-january-iap-2014/">
 		  <h1>C Language</h1>
 		  <h3>MIT OCW</h3>
 		 <p>Effective Programming in C</p>
 		</a>
+		<form class="more-links" action="detail.html">
+			<button class="learn-more">
+			  <span class="circle" aria-hidden="true">
+				<span class="icon arrow"></span>
+			  </span>
+			  <span class="button-text">Learn More</span>
+			</button>
+		  </form>
+
 	  </article>
 
 	  <article class="results-content gallery-cell">
 		<figure><img src="img/mitocw.png" alt="orielly"></figure>
-		<img src="img/cardf.png" alt="c">
+		<img src="img/cards.png" alt="c">
 		<a target="_blank" href="https://www.learn-c.org/">
 		  <h1>C Language</h1>
 		  <h3>LEARNC.ORG</h3>
 		 <p>Interactive C Tutorial</p>
 		</a>
+		<form class="more-links" action="detail.html">
+			<button class="learn-more">
+			  <span class="circle" aria-hidden="true">
+				<span class="icon arrow"></span>
+			  </span>
+			  <span class="button-text">Learn More</span>
+			</button>
+		  </form>
+
 	  </article>
 
 	  <article class="results-content gallery-cell">
 		<figure><img src="img/wikiboosk.png" alt="orielly"></figure>
-		<img src="img/cardf.png" alt="java">
+		<img src="img/cards.png" alt="java">
 		<a target="_blank" href="https://en.wikibooks.org/wiki/C_Programming">
 		  <h1>C Language</h1>
 		  <h3>Wiki Books</h3>
 		 <p>C Programming book by Wiki Books</p>
 		</a>
+		<form class="more-links" action="detail.html">
+			<button class="learn-more">
+			  <span class="circle" aria-hidden="true">
+				<span class="icon arrow"></span>
+			  </span>
+			  <span class="button-text">Learn More</span>
+			</button>
+		  </form>
+
 	  </article>
 
 	  <article class="results-content gallery-cell">
 
 		<figure><img src="img/rasberry.webp" alt="orielly"></figure>
-		<img src="img/cardf.png" alt="c">
+		<img src="img/cards.png" alt="c">
 		<a target="_blank" href="https://www.raspberrypi.org/magpi-issues/C_GUI_Programming.pdf">
 		  <h1>C Language</h1>
 		  <h3>Rasberry Press</h3>
 		 <p>Intro to C &amp; GUI a book</p>
 		</a>
+		<form class="more-links" action="detail.html">
+			<button class="learn-more">
+			  <span class="circle" aria-hidden="true">
+				<span class="icon arrow"></span>
+			  </span>
+			  <span class="button-text">Learn More</span>
+			</button>
+		  </form>
+
 	  </article>
 	</section>
+	</section>
+	<hr>
 	
 	<!-- c section ends here -->
 
 	<!-- c++ section starts her -->
+
+	<section class="results-wrapper">
+	  <h1>C++</h1>
 
 	<section class="results cpp js-flickity"
 		   data-flickity-options='{ "cellalign": "left", "contain": true, "wrapAround": true}'>
@@ -319,112 +530,185 @@
 
 	  <article class="results-content gallery-cell"> 
 		<figure><img src="img/mitocw.png" alt="orielly"></figure>
-		  <img src="img/cardf.png" alt="cpp">
+		  <img src="img/cards.png" alt="cpp">
 		  <a target="_blank" href="https://ocw.mit.edu/courses/elctrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/">
 			<h1>C++</h1>
 			<h3>MIT OCW</h3>
 			<p>Intro to C++</p>
 		  </a>
+		  <form class="more-links" action="detail.html">
+			<button class="learn-more">
+			  <span class="circle" aria-hidden="true">
+				<span class="icon arrow"></span>
+			  </span>
+			  <span class="button-text">Learn More</span>
+			</button>
+		  </form>
+
 	  </article>
 
 	  <article class="results-content gallery-cell">
 		<figure><img src="img/stanford.png.png" alt="cpp"></figure>
-		<img src="img/cardf.png" alt="cpp">
+		<img src="img/cards.png" alt="cpp">
 		<a target="_blank" href="https://see.stanford.edu/Course/CS106A">
 		  <h1>C++</h1>
 		  <h3>Stanford</h3>
 		 <p>Programming Methodology</p>
 		</a>
+		<form class="more-links" action="detail.html">
+			<button class="learn-more">
+			  <span class="circle" aria-hidden="true">
+				<span class="icon arrow"></span>
+			  </span>
+			  <span class="button-text">Learn More</span>
+			</button>
+		  </form>
+
 	  </article>
 
 	  <article class="results-content gallery-cell">
 		<figure><img src="img/Coursera.svg" alt="cpp"></figure>
-		<img src="img/cardf.png" alt="cpp">
+		<img src="img/cards.png" alt="cpp">
 		<a target="_blank" href="https://www.coursera.org/learn/c-plus-plus-b">
 		  <h1>C++</h1>
 		  <h3>Coursera</h3>
 		 <p>C++ For C Programmers</p>
 		</a>
+		<form class="more-links" action="detail.html">
+			<button class="learn-more">
+			  <span class="circle" aria-hidden="true">
+				<span class="icon arrow"></span>
+			  </span>
+			  <span class="button-text">Learn More</span>
+			</button>
+		  </form>
+
 	  </article>
 
 	  <article class="results-content gallery-cell">
 		<figure><img src="img/oreilly.svg" alt="cpp"></figure>
-		<img src="img/cardf.png" alt="cpp">
+		<img src="img/cards.png" alt="cpp">
 		<a target="_blank" href="http://greenteapress.com/thinkcpp/index.html">
 		  <h1>C++</h1>
 		  <h3>Green Tree Press</h3>
 		 <p>Think C++</p>
 		</a>
+		<form class="more-links" action="detail.html">
+			<button class="learn-more">
+			  <span class="circle" aria-hidden="true">
+				<span class="icon arrow"></span>
+			  </span>
+			  <span class="button-text">Learn More</span>
+			</button>
+		  </form>
+
 	  </article>
 	  
 	</section>
+	</section>
+	<hr>
 
 	<!-- c++ section ends here -->
 
 	<!-- c# section starts here -->
+
+
+	<section class="results-wrapper">
+	  <h1>C#</h1>
 
 	<section class="results csharp js-flickity"
 		   data-flickity-options='{ "cellalign": "left", "contain": true, "wrapAround": true}'>
 
 	  <article class="results-content gallery-cell">
 		<figure><img src="img/microsoft.png" alt="csharp"></figure>
-		  <img src="img/cardf.png" alt="csharp">
+		  <img src="img/cards.png" alt="csharp">
 		  <a target="_blank" href="https://channel9.msdn.com/Series/CSharp-Fundamentals-for-Absolute-Beginners">
 			<h1>C Sharp</h1>
 			<h3>Microsoft</h3>
 			<p>C# for absolute beginners</p>
 		  </a>
+		  <form class="more-links" action="detail.html">
+			<button class="learn-more">
+			  <span class="circle" aria-hidden="true">
+				<span class="icon arrow"></span>
+			  </span>
+			  <span class="button-text">Learn More</span>
+			</button>
+		  </form>
 	  </article>
 
 	  <article class="results-content gallery-cell">
 		<figure><img src="img/microsoft.png" alt="csharp"></figure>
-		<img src="img/cardf.png" alt="csharp">
+		<img src="img/cards.png" alt="csharp">
 		<a target="_blank" href="https://docs.microsoft.com/en-us/learn/">
 		  <h1>C Sharp</h1>
 		  <h3>Microsoft</h3>
 		 <p>C# Jump Start</p>
 		</a>
+		<form class="more-links" action="detail.html">
+			<button class="learn-more">
+			  <span class="circle" aria-hidden="true">
+				<span class="icon arrow"></span>
+			  </span>
+			  <span class="button-text">Learn More</span>
+			</button>
+		  </form>
+
 	  </article>
 
 	  <article class="results-content gallery-cell">
 		<figure><img src="img/stanford.png.png" alt="cpp"></figure>
-		<img src="img/cardf.png" alt="stanford">
+		<img src="img/cards.png" alt="stanford">
 		<a target="_blank" href="https://see.stanford.edu/Course/CS106A"> 
 		  <h1>C Sharp</h1>
 		  <h3>Stanford University</h3>
 		 <p>Programming Methodology</p>
 		</a>
+		<form class="more-links" action="detail.html">
+			<button class="learn-more">
+			  <span class="circle" aria-hidden="true">
+				<span class="icon arrow"></span>
+			  </span>
+			  <span class="button-text">Learn More</span>
+			</button>
+		  </form>
+
 	  </article>
+	</section>
+	</section>
+	<hr>
 
 </main>
 
-  <footer>
+<footer class="footer">
 	<nav class="footer-nav">
+
 	  <ul>
-	    <li class="footer-nav-links">Home</li>
-	    <li class="footer-nav-links">Search</li>
-	    <li class="footer-nav-links">About US</li>
-	    <li class="footer-nav-links"></li>
-	    <li class="footer-nav-links">Blog</li>
-		<li class="footer-nav-links">Advertise</li>
-		<li class="footer-nav-links">Advertise</li>
+		<li class="footer-nav-links"><a href="#">Home</a></li>
+		<li class="footer-nav-links"><a href="#">Search</a></li>
+		<li class="footer-nav-links"><a href="#">About US</a></li>
+		<li class="footer-nav-links icon"><span class="iconify" data-icon="zondicons:education" data-inline="false"></span></li>
+		<li class="footer-nav-links"><a href="#">Blog</a></li>
+		<li class="footer-nav-links"><a href="#">Advertise</a></li>
+		<li class="footer-nav-links"><a href="#">Advertise</a></li>
 	  </ul>
 	</nav>
 
+	 
 	<div class="container-footer">
 	  <div class="subscribe">
-	    <h1>Subscribe</h1>
+	    <h3>Subscribe</h3>
 	    <div class="subscribe-group">
 	      <input type="email" name="email" placeholder="youremail@example.com">
 	      <button type="submit">Send</button>
 	    </div>
 	  </div>
 	  <div class="contact">
-	    <h1>Contact</h1>
-	    <p>You can reach us at freecoursecamp@lorem.com</p>
+	    <h3>Contact</h3>
+	    <p>You can reach us at <a href="mailto:freecoursecamp@lorem.com">freecoursecamp@lorem.com</a></p>
 	  </div>
 	  <div class="about">
-	    <h1>About</h1>
+	    <h3>About</h3>
 	    <p>Free Course Camp is an open source project that aims at delivering free and quality courses in wide variety of CS domains</p>
 	  </div>
 	</div>
@@ -436,10 +720,17 @@
 		<span class="iconify linkedin" data-icon="dashicons:linkedin" data-inline="false"></span>
 	  </div>
 	  <div class="right-text">
+
+		<p>Credits: Hero Section background and slider image 1: <a href="http://www.freepik.com">Designed by fullvector / Freepik</a>, 
+		Hero section slider image 2 : <a href="http://www.freepik.com">Designed by pch.vector / Freepik</a>, 
+		</p>
 		<p>&copy; 2020 MIT License	</p>
 	  </div>
 	</div>
   </footer>
+
+
+  
 
 <script src="https://kit.fontawesome.com/95e80ef8bd.js" crossorigin="anonymous"></script>
 <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
