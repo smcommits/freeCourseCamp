@@ -6,6 +6,10 @@ header {
     padding: 1em 3em;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 
+    .logo {
+      margin: 0;
+    }
+
     .nav-links-container {
       margin-top: 0;
       margin-left: 2em;
@@ -34,6 +38,63 @@ header {
         border-bottom-left-radius: 0;
         font-weight: $medium;
       }
+    }
+  }
+}
+
+.footer {
+  padding: 3em;
+
+  .mobile {
+    display: none;
+  }
+
+  .icons {
+    display: none;
+  }
+
+  .footer-nav {
+    display: flex;
+    border-top: 1px solid $dark;
+    padding: 0.5em 3em;
+    border-bottom: 1px solid $dark;
+    position: relative;
+    justify-content: space-around;
+
+    li {
+      padding: 0;
+    }
+
+    .wrap-left {
+      display: flex;
+      justify-content: space-between;
+      border: none;
+      padding: 0;
+      padding-right: 4em;
+      flex-basis: 50%;
+    }
+
+    .wrap-right {
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      border: none;
+      flex-basis: 50%;
+      padding-left: 4em;
+    }
+
+    .icon {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 1px solid $dark;
+      border-radius: 50%;
+      font-size: 1.2em;
+      padding: 1.8em;
+      background-color: #000;
+      margin: 0;
     }
   }
 }
