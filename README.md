@@ -44,6 +44,8 @@ Contributions, issues, and feature requests are welcome!
 
 The vectors and illustration on the website are downloaded from [Freepik](freepik.com). Please, refer to the footer section of the website to know more about creators.
 
+The overall theming and layout of this website are significantly inspired from the design [PatashuleKE](https://www.behance.net/gallery/25563385/PatashuleKE) by [Mathew Njuguna](https://www.behance.net/mathewnjuguna) and [Sam Achola](https://www.behance.net/aweSam) on Behance. 
+
 
 
 ## Show your support
