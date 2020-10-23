@@ -1,0 +1,36 @@
+
+@mixin xyAlign($p: absolute, $t: 50%, $l: 50%, $x: -50%, $y:-50%) {
+  position: $p;
+  top: $t;
+  left: $l;
+  transform: translate($x, $y);
+}
+
+@mixin textTransform (
+  $w: $book,
+  $t: null,
+  $c: $black,
+  $fs: null,
+  $a: null) {
+  font-weight: $w;
+  text-transform: $t;
+  color: $c;
+  font-size: $fs;
+  text-align: $a;
+}
+
+@mixin dflex(
+  $fd: row,
+  $jc: null,
+  $ai: null,
+  $fw: null) {
+  display: flex;
+  flex-direction: $fd;
+  justify-content: $jc;
+  align-items: $ai;
+  flex-wrap: $fw;
+}
+
+@mixin transition($property: all, $duration: 0.45s, $ease: cubic-bezier(0.65,0,0.076,1)) {
+  transition: $property $duration $ease;
+}

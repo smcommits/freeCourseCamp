@@ -1,0 +1,71 @@
+header {
+  .top-navbar {
+    padding: 1em 8em;
+  }
+}
+
+.results {
+  .gallery-cell {
+    width: 33.33%;
+  }
+}
+
+.herobg {
+  background-size: 88%;
+  animation: herobg 20s;
+  animation: animatedBackground 10s linear;
+  animation-fill-mode: forwards;
+
+  .hero-overlay {
+    margin-left: 8em;
+    max-width: 550px;
+    animation: search 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+  }
+
+  .main-carousel {
+    right: 10%;
+    align-self: end;
+
+    h3 {
+      color: $white;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 2em;
+    }
+  }
+}
+
+@keyframes animatedBackground {
+  from {
+    background-size: 100%;
+  }
+
+  to {
+    background-size: 170%;
+  }
+}
+
+@keyframes herobg {
+  0% {
+    background-position: 88%;
+  }
+
+  100% {
+    background-size: 120%;
+    background-position: 19% 50%;
+  }
+}
+
+@keyframes search {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
